@@ -26,5 +26,5 @@ export const site = {
       "https://www.trec.texas.gov/sites/default/files/pdf-forms/IABS%201-2.pdf",
     iabsPage: "/iabs",
   },
-  formspreePlaceholder: "https://formspree.io/f/YOUR_FORM_ID",
+  formspreeEndpoint: "https://formspree.io/f/xaeyzgyp",
 } as const;

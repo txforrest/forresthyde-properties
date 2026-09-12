@@ -1,15 +1,7 @@
 import { site } from "@/lib/site";
 
 /**
- * Lead form.
- *
- * Default: mailto fallback via JavaScript-free POST to Formspree placeholder.
- * Replace `site.formspreePlaceholder` in src/lib/site.ts with your Formspree
- * form endpoint (e.g. https://formspree.io/f/xxxxxxxx) before going live,
- * or change the action to a server route / other form provider.
- *
- * Without a real Formspree ID, users can still reach Forrest via the Call CTA
- * or the mailto link below the form.
+ * Lead form — posts to Formspree (`site.formspreeEndpoint`).
  */
 export function ContactForm() {
   return (
@@ -72,7 +64,7 @@ export function ContactForm() {
           </div>
 
           <form
-            action={site.formspreePlaceholder}
+            action={site.formspreeEndpoint}
             method="POST"
             className="rounded-2xl border border-navy/10 bg-cream p-6 sm:p-8"
           >
@@ -158,22 +150,14 @@ export function ContactForm() {
             </button>
 
             <p className="mt-4 text-xs leading-relaxed text-muted">
-              Form endpoint is a Formspree placeholder (
-              <code className="rounded bg-white px-1 py-0.5 text-[0.7rem]">
-                YOUR_FORM_ID
-              </code>
-              ). Replace it in{" "}
-              <code className="rounded bg-white px-1 py-0.5 text-[0.7rem]">
-                src/lib/site.ts
-              </code>{" "}
-              before production, or email{" "}
+              Prefer email? Reach me at{" "}
               <a
                 href={`mailto:${site.email}?subject=${encodeURIComponent("Consultation request")}`}
                 className="font-medium text-burgundy underline-offset-2 hover:underline"
               >
                 {site.email}
-              </a>{" "}
-              directly.
+              </a>
+              .
             </p>
           </form>
         </div>

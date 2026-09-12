@@ -42,11 +42,11 @@ vercel --prod   # production
 
 ## Contact form (Formspree)
 
-The homepage lead form posts to a **Formspree placeholder**:
+The homepage lead form posts to Formspree:
 
-`https://formspree.io/f/YOUR_FORM_ID`
+`https://formspree.io/f/xaeyzgyp`
 
-Before go-live, create a form at [formspree.io](https://formspree.io) and replace `YOUR_FORM_ID` in `src/lib/site.ts` (`site.formspreePlaceholder`). Until then, visitors can use the Call CTA or email `ForrestHydeRealtor@gmail.com` directly.
+Configured in `src/lib/site.ts` as `site.formspreeEndpoint`. Submissions notify `ForrestHydeRealtor@gmail.com`.
 
 ## TREC compliance
 
