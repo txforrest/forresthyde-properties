@@ -1,6 +1,6 @@
 # Forrest Hyde — 316 Realty Group
 
-Production marketing website for Texas realtor **Forrest Hyde** (TREC #701231), sponsored by **Tim Goss** / **316 Realty Group**.
+Production marketing website for Texas Realtor® **Forrest Hyde** (TREC #701231), sponsored by **Tim Goss** / **316 Realty Group**.
 
 - **Live domain:** [www.forresthyde.properties](https://www.forresthyde.properties) (DNS already points at Vercel)
 - **Stack:** Next.js App Router, TypeScript, Tailwind CSS

@@ -23,7 +23,7 @@ export function Hero() {
             id="hero-heading"
             className="font-serif text-4xl font-semibold leading-tight text-navy sm:text-5xl lg:text-[3.25rem]"
           >
-            Your Texas realtor for Williamson County and beyond
+            Your Texas Realtor® for Williamson County and beyond
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted">
             I&apos;m {site.name} — a licensed Texas real estate agent based in{" "}

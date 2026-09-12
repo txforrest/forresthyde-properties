@@ -26,13 +26,13 @@ export const metadata: Metadata = {
   },
   description: site.description,
   keywords: [
-    "Georgetown TX realtor",
+    "Georgetown TX Realtor®",
     "Williamson County real estate",
     "Forrest Hyde",
     "316 Realty Group",
-    "Texas realtor",
+    "Texas Realtor®",
     "Georgetown homes",
-    "Round Rock realtor",
+    "Round Rock Realtor®",
   ],
   authors: [{ name: site.name }],
   openGraph: {

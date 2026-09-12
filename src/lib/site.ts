@@ -1,8 +1,8 @@
 export const site = {
   name: "Forrest Hyde",
-  title: "Forrest Hyde | Georgetown & Williamson County Realtor",
+  title: "Forrest Hyde | Georgetown & Williamson County Realtor®",
   description:
-    "Forrest Hyde, Texas realtor with 316 Realty Group. Serving all of Texas with a specialty in Williamson County and Georgetown, TX. TREC license #701231. Call 512-826-4568.",
+    "Forrest Hyde, Texas Realtor® with 316 Realty Group. Serving all of Texas with a specialty in Williamson County and Georgetown, TX. TREC license #701231. Call 512-826-4568.",
   url: "https://www.forresthyde.properties",
   brokerage: "316 Realty Group",
   license: "701231",
