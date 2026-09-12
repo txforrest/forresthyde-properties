@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --burgundy: #8b1e2d;
+  --burgundy-dark: #6e1824;
+  --navy: #2c3e50;
+  --navy-dark: #1a252f;
+  --cream: #f7f3ee;
+  --cream-dark: #ebe4da;
+  --charcoal: #2d2d2d;
+  --muted: #5c6570;
+  --background: #ffffff;
+  --foreground: #2d2d2d;
+}
+
+@theme inline {
+  --color-burgundy: var(--burgundy);
+  --color-burgundy-dark: var(--burgundy-dark);
+  --color-navy: var(--navy);
+  --color-navy-dark: var(--navy-dark);
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-charcoal: var(--charcoal);
+  --color-muted: var(--muted);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-source-sans);
+  --font-serif: var(--font-source-serif);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-source-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--burgundy) 25%, transparent);
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .print-friendly {
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
