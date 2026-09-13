@@ -27,4 +27,14 @@ export const site = {
     iabsPage: "/iabs",
   },
   formspreeEndpoint: "https://formspree.io/f/xaeyzgyp",
+  guide: {
+    path: "/guide",
+    thanksPath: "/guide/thanks",
+    title: "The Honest Georgetown Relocation Guide",
+    subtitle:
+      "What your tax bill will actually be, which neighborhoods carry a hidden second tax, why a Georgetown address does not mean Georgetown schools, and how long the drive really takes.",
+    file: "/the-honest-georgetown-relocation-guide.pdf",
+    downloadName: "The-Honest-Georgetown-Relocation-Guide.pdf",
+    pages: 17,
+  },
 } as const;

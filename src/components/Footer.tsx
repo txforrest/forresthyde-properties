@@ -50,12 +50,20 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  href="/#contact"
                   className="hover:text-white underline-offset-2 hover:underline"
                 >
                   Request a consultation
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={site.guide.path}
+                  className="hover:text-white underline-offset-2 hover:underline"
+                >
+                  Free Georgetown relocation guide
+                </Link>
               </li>
             </ul>
           </div>
