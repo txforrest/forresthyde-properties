@@ -31,15 +31,21 @@ export function Header() {
           className="hidden items-center gap-6 text-sm font-medium text-navy md:flex"
           aria-label="Primary"
         >
-          <a href="#services" className="hover:text-burgundy transition-colors">
+          <Link href="/#services" className="hover:text-burgundy transition-colors">
             Services
-          </a>
-          <a href="#areas" className="hover:text-burgundy transition-colors">
+          </Link>
+          <Link href="/#areas" className="hover:text-burgundy transition-colors">
             Areas
-          </a>
-          <a href="#contact" className="hover:text-burgundy transition-colors">
+          </Link>
+          <Link
+            href={site.guide.path}
+            className="font-semibold text-burgundy hover:text-burgundy-dark transition-colors"
+          >
+            Free guide
+          </Link>
+          <Link href="/#contact" className="hover:text-burgundy transition-colors">
             Contact
-          </a>
+          </Link>
           <Link href="/iabs" className="hover:text-burgundy transition-colors">
             IABS
           </Link>

@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { TrustStrip } from "@/components/TrustStrip";
 import { Services } from "@/components/Services";
 import { Areas } from "@/components/Areas";
+import { GuidePromo } from "@/components/GuidePromo";
 import { ContactForm } from "@/components/ContactForm";
 import { site } from "@/lib/site";
 
@@ -46,6 +47,7 @@ export default function HomePage() {
       <TrustStrip />
       <Services />
       <Areas />
+      <GuidePromo />
       <ContactForm />
     </>
   );
