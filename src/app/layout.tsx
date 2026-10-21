@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { StickyMobileCTA } from "@/components/StickyMobileCTA";
+import { SiteShell } from "@/components/SiteShell";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -75,10 +73,7 @@ export default function RootLayout({
       <body
         className={`${sourceSans.variable} ${sourceSerif.variable} font-sans antialiased`}
       >
-        <Header />
-        <main className="pb-20 sm:pb-0">{children}</main>
-        <Footer />
-        <StickyMobileCTA />
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );
