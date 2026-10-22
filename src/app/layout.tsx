@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
-import { SiteShell } from "@/components/SiteShell";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -73,7 +72,7 @@ export default function RootLayout({
       <body
         className={`${sourceSans.variable} ${sourceSerif.variable} font-sans antialiased`}
       >
-        <SiteShell>{children}</SiteShell>
+        {children}
       </body>
     </html>
   );

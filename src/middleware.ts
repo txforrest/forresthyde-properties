@@ -13,6 +13,7 @@ export function middleware(request: NextRequest) {
       return NextResponse.redirect(url, 308);
     }
     // Keep brokerage pages on the brokerage's own domain.
+    url.protocol = "https:";
     url.hostname = "forresthyde.properties";
     url.port = "";
     return NextResponse.redirect(url, 307);
