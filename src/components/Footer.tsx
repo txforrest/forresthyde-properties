@@ -83,7 +83,7 @@ export function Footer() {
         <div className="mt-10 rounded-lg border border-white/20 p-5">
           <h2 className="font-serif text-xl">Other businesses connected through Forrest Hyde</h2>
           <p className="mt-2 text-sm leading-relaxed text-white/80">Hyde Enterprises LLC explores direct property purchases and creative financing. These investment activities are separate from requests for brokerage representation through 316 Realty Group.</p>
-          <Link href="/investments" className="mt-3 inline-block text-sm font-semibold underline underline-offset-4">Visit Hyde Enterprises · Real Estate Investments →</Link>
+          <a href="https://invest.forresthyde.properties/" className="mt-3 inline-block text-sm font-semibold underline underline-offset-4">Visit Hyde Enterprises · Real Estate Investments →</a>
         </div>
 
         {/* TREC-required links — text-sm (≥12pt), readily noticeable */}

@@ -5,9 +5,9 @@ const form = "https://docs.google.com/forms/d/e/1FAIpQLSfhZNcMIeOqiRq3P_zfXxtbl9
 export const metadata: Metadata = {
   title: { absolute: "Hyde Enterprises LLC | Real Estate Investments" },
   description: "Explore an as-is property sale and creative purchase options with Hyde Enterprises LLC. Investment inquiries are separate from Forrest Hyde’s brokerage services.",
-  alternates: { canonical: "https://forresthyde.properties/investments" },
+  alternates: { canonical: "https://invest.forresthyde.properties/" },
   keywords: ["Hyde Enterprises LLC", "real estate investments", "as-is property sale", "creative financing", "Forrest Hyde"],
-  openGraph: { title: "Hyde Enterprises LLC | Real Estate Investments", description: "A direct conversation about your property, your timeline, and potential purchase options.", url: "https://forresthyde.properties/investments", siteName: "Hyde Enterprises LLC", type: "website", images: [] },
+  openGraph: { title: "Hyde Enterprises LLC | Real Estate Investments", description: "A direct conversation about your property, your timeline, and potential purchase options.", url: "https://invest.forresthyde.properties/", siteName: "Hyde Enterprises LLC", type: "website", images: [] },
   twitter: { card: "summary", title: "Hyde Enterprises LLC | Real Estate Investments", description: "Explore potential direct purchase options for your property.", images: [] },
 };
 
@@ -15,7 +15,7 @@ export default function InvestmentsPage() {
   return <div className="min-h-screen bg-[#f4f2eb] text-[#19332d]">
     <div className="bg-[#19332d] px-5 py-3 text-center text-sm text-white">Real estate investments · A separate activity from licensed brokerage services</div>
     <header className="border-b border-[#19332d]/15"><div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-6">
-      <a href="/investments" className="leading-tight"><span className="block font-serif text-2xl font-semibold">Hyde Enterprises LLC</span><span className="text-xs uppercase tracking-[.22em]">Real Estate Investments</span></a>
+      <a href="https://invest.forresthyde.properties/" className="leading-tight"><span className="block font-serif text-2xl font-semibold">Hyde Enterprises LLC</span><span className="text-xs uppercase tracking-[.22em]">Real Estate Investments</span></a>
       <nav aria-label="Investment navigation" className="flex flex-wrap gap-5 text-sm font-semibold"><a href="#options">Purchase options</a><a href="#how-it-works">How it works</a><a href="#inquiry" className="underline underline-offset-4">Tell us about your property ↗</a></nav>
     </div></header>
     <main>

@@ -18,6 +18,19 @@ export function middleware(request: NextRequest) {
     url.port = "";
     return NextResponse.redirect(url, 307);
   }
+  // After cutover, the investment experience's public home is its own hostname.
+  // Host-scoped so Vercel preview URLs can still render /investments directly.
+  if (
+    (host === "forresthyde.properties" || host === "www.forresthyde.properties") &&
+    (request.nextUrl.pathname === "/investments" || request.nextUrl.pathname === "/investments/")
+  ) {
+    const url = request.nextUrl.clone();
+    url.protocol = "https:";
+    url.hostname = "invest.forresthyde.properties";
+    url.port = "";
+    url.pathname = "/";
+    return NextResponse.redirect(url, 308);
+  }
   return NextResponse.next();
 }
 

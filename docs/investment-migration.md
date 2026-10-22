@@ -25,13 +25,16 @@ Fields observed: email; name; property address; phone number and best time to ca
 
 This is a text/form-reference capture, not a Google Sites export or a backup of form responses. The original site and form have not been altered.
 
-## Domain cutover still required
+## Domain cutover — completed October 22, 2026
 
-1. Add `invest.forresthyde.properties` to the existing Vercel project that deploys this repository.
-2. At the DNS provider, add exactly the record Vercel supplies for that hostname. Do not change apex, www, or mail records.
-3. Verify HTTPS, root investment page, brokerage links, and embedded form on the new hostname.
-4. Change investment canonical/Open Graph URL and brokerage footer link to the subdomain after it is verified live. Redirect the main-domain `/investments` route only after that verification.
-5. Obtain sponsoring-broker review of branding and role/disclosure wording. Website disclosures do not substitute for transaction-specific written disclosures.
-6. Only then replace the original Google Sites homepage with the umbrella hub. Map any existing URLs before changing them; Google Sites redirect capabilities must be checked separately.
+1. Done: `invest.forresthyde.properties` added to Vercel project `forresthyde-properties` (domain DNS is Vercel-managed; the existing wildcard ALIAS covers it, so no new record was needed; apex, www and mail untouched).
+2. Done: Let's Encrypt certificate issued; HTTPS root, `/investments` → `/` (308), brokerage paths → main domain (307), assets, anchors and embedded form verified on the live hostname.
+3. Done: SiteShell (client `usePathname`) replaced by an `(brokerage)` route group layout. The old approach hydrated the rewritten host with brokerage chrome and React error #418; the route-group layout removes that failure mode.
+4. Done: canonical/Open Graph URL, investment logo link and brokerage footer link now use `https://invest.forresthyde.properties/`. Main-domain (and www) `/investments` 308-redirects to the subdomain; preview hostnames still render `/investments` directly.
+
+## Still open
+
+1. Obtain sponsoring-broker review of branding and role/disclosure wording. Website disclosures do not substitute for transaction-specific written disclosures.
+2. Only then replace the original Google Sites homepage with the umbrella hub. Map any existing URLs before changing them; Google Sites redirect capabilities must be checked separately.
 
 The umbrella hub is a future task. Do not describe every linked business as a subsidiary without confirming ownership and structure.
